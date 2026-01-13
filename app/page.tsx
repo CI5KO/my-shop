@@ -1,3 +1,11 @@
-export default function Home() {
-  return <>Holis xd</>;
+"use server";
+
+import HomeClient from "./HomeClient";
+
+export default async function Home() {
+  return (
+    <>
+      <HomeClient />
+    </>
+  );
 }
