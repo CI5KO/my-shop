@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Switch from "../atoms/Switch";
-import { PiSun, PiMoon } from "react-icons/pi";
+import { PiSunFill, PiMoonFill } from "react-icons/pi";
 
 export default function ThemeSwitcher() {
   const [isDark, setIsDark] = useState<boolean>(false);
@@ -25,8 +25,8 @@ export default function ThemeSwitcher() {
 
   return (
     <Switch
-      IconOn={<PiSun className="w-6 h-6" />}
-      IconOff={<PiMoon className="w-6 h-6" />}
+      IconOn={<PiSunFill className="w-6 h-6" />}
+      IconOff={<PiMoonFill className="w-6 h-6" />}
       isOn={isDark}
       onToggle={toggleTheme}
     />
