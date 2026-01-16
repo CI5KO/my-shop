@@ -42,7 +42,7 @@ export default function HomeClient({ getItemsShop }: HomeClientProps) {
       />
       <FaShoppingCart className="fixed bottom-4 right-4 w-8 h-8" />
       <main
-        className={`grid w-full gap-4 max-w-360 mx-auto px-4 ${
+        className={`grid w-full gap-4 max-w-360 mx-auto px-4 pb-4 ${
           isZoom ? "grid-cols-1 lg:grid-cols-3" : "grid-cols-2 lg:grid-cols-4"
         }`}
       >
