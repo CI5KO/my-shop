@@ -44,8 +44,8 @@ export default function Header({
         <section className="flex items-center gap-2">
           <Switch
             isOn={isZoom}
-            IconOn={<FaPlus className="w-6 h-6" />}
-            IconOff={<FaMinus className="w-6 h-6" />}
+            IconOn={<FaMinus className="w-6 h-6" />}
+            IconOff={<FaPlus className="w-6 h-6" />}
             onToggle={() => onZoomChange(!isZoom)}
           />
           <ThemeSwitcher />
